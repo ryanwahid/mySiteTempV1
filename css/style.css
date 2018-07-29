@@ -8,6 +8,7 @@ html, body {
 }
 
 
+
 section {
   position: relative;
   width: 100%;
@@ -28,7 +29,7 @@ section {
   background-repeat: no-repeat;  
 
 }
-/* Enables Particles */
+/* Enables Particles */ 
  
 }
 
@@ -60,7 +61,7 @@ section h1 {
 
 #section01 { background: url(green1.jpg) center center / cover no-repeat;}
 #section02 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg02.jpg) center center / cover no-repeat;}
-#section03 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg03.jpg) center center / cover no-repeat;}
+#section03 { background: #080a30 center center / cover no-repeat;}
 
 
 .demo a {
@@ -70,9 +71,11 @@ section h1 {
   z-index: 2;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
+  
   color: #fff;
   font : normal 400 20px/1 'Josefin Sans', sans-serif;
   letter-spacing: .1em;
+  float: left;
   text-decoration: none;
   transition: opacity .3s;
 }
@@ -178,6 +181,8 @@ section h1 {
   border-left: 1px solid #fff;
   border-bottom: 1px solid #fff;
   -webkit-transform: rotate(-45deg);
+  
+
   transform: rotate(-45deg);
   box-sizing: border-box;
 }
@@ -193,6 +198,8 @@ section h1 {
   border-radius: 100%;
   opacity: 0;
   -webkit-animation: sdb03 3s infinite;
+  /*   -webkit-overflow-scrolling: touch; */
+
   animation: sdb02 3s infinite;
   box-sizing: border-box;
 }
@@ -229,47 +236,57 @@ section h1 {
 
 
 #section03 a {
-  padding-top: 60px;
+  padding-top: 500px;
+  padding-left: -390px;
 }
-#section03 a span {
+
+
+/* #section03 a span {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 46px;
-  height: 46px;
+ width: 96px;
+height: 96px;
   margin-left: -23px;
-  border: 1px solid #fff;
-  border-radius: 100%;
+ border: 1px solid #fff;
+ border-radius: 100%;
   box-sizing: border-box;
-}
-#section03 a span::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  content: '';
-  width: 16px;
-  height: 16px;
-  margin: -4px 0 0 -8px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(132deg);
-  transform: rotate(132deg);
-  box-sizing: border-box;
-}
+} */
+
+
+/* #section03 a span::after {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   content: '';
+   width: 16px;
+   height: 16px;
+   margin: -4px 0 0 -8px;
+ border-left: 1px solid #fff;
+ border-bottom: 1px solid #fff;
+   -webkit-transform: rotate(132deg);
+   transform: rotate(132deg);
+   box-sizing: border-box;
+ } */ 
 #section03 a span::before {
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
-  content: '';
+  content: 'Back to Top';
+  align-content: flex-start;
   width: 44px;
   height: 44px;
-  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
-  border-radius: 100%;
+  /* box-shadow: 0 0 0 0 rgba(255,255,255,.1); */
+  /* border-radius: 100%; */
   opacity: 0;
   -webkit-animation: sdb03 3s infinite;
+  /*   -webkit-overflow-scrolling: touch; */
+
   animation: sdb03 3s infinite;
   box-sizing: border-box;
+
+
 }
 @-webkit-keyframes sdb03 {
   0% {
