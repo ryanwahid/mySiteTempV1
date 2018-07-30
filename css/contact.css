@@ -16,21 +16,23 @@
   font-weight: normal;
   font-style: normal;
 }
-body {
+/* body {
   margin: 0;
   padding: 0;
   height: 100%
-}
+      overflow-x: hidden; 
+} */ 
 
 .container {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #080a30;
-  background-image: url('nasa2.gif');
+  background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+  background-image: none;
   background-repeat: no-repeat;"
-
+  overflow: hidden;
   background-size: contain;
+
 }
 
 .contact-form {
@@ -40,9 +42,8 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0.92;
-
+  overflow: hidden;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
 }
 
 .form-background {
@@ -53,9 +54,6 @@ body {
   -webkit-clip-path: polygon(88% calc(100% - 210px - 6%), 100% calc(100% - 190px), 100% 100%, 0 100%, 0 calc(100% - 210px));
   clip-path: polygon(83% 52%, 100% 69%, 100% 100%, 0 100%, 0 66%);
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    text-decoration-color: white;
-
-
 }
 
 form {
@@ -66,18 +64,18 @@ form {
   bottom: 100px;
 }
 
-.cross {
+/* .cross {
   position: absolute;
   display: inline-block;
   z-index: 99999;
   width: 15px;
   height: 15px;
-  left: calc(258% - 30px);
-  bottom: calc(110px + 6% - 25px);
+  left: calc(88% - 15px);
+  bottom: calc(210px + 6% - 25px);
   cursor: pointer;
   transition: all 0.5s;
 }
-
+ */
 .cross:hover {
   transform: rotate(90deg);
 }
@@ -107,7 +105,6 @@ form {
   vertical-align: top;
 }
 
-
 label {
   position: absolute;
   font-size: 12px;
@@ -133,7 +130,7 @@ input, textarea {
   border-color: white;
   border-style: solid;
   padding-left: 10px;
-  /* margin-right: 20px; */
+  margin-right: 20px;
   color: white;
 }
 
@@ -154,14 +151,12 @@ textarea {
   background-color: #4285F4;
   transition: all 0.1s;
   -webkit-transition: all 0.1s;
-
-
   width: 100px;
   height: 72px;
   bottom: -8px;
   left: calc(56% + 50px);
   cursor: pointer;
-
+  overflow: hidden;
   transition: all 0.5s;
 }
 
@@ -213,13 +208,13 @@ textarea:focus {
   z-index: 9999;
   bottom: -8px;
   left: calc(56% + 50px);
-
+  overflow: hidden;
 }
 
- .horline {
+/* .horline {
   position: absolute;
   z-index: 9999;
-  background-color: ##547fa0;
+  background-color: #4285F4;
   bottom: 125px;
   left: calc(56% + 25px);
   height: 1px;
@@ -229,13 +224,13 @@ textarea:focus {
 .vertline {
   position: absolute;
   z-index: 9999;
-  background-color: ##547fa0;
+  background-color: #c54d74;
   bottom: calc(126px - 125px);
-  left: calc(56% + 2500px);
+  left: calc(56% + 250px);
   height: 125px;
   width: 1px;
 }
- 
+ */
 /**
 * Footer
 */
@@ -247,33 +242,20 @@ footer {
   z-index: 9999;
   width: .1px;
   height: .1px;
-  background-color: red;
-
-
+  background-color: none;
 
 }
 
+
+/* This is the big mail icon/button */
 .contact-icon {
   cursor: pointer;
   position: center;
-  width: 155px;
+  width: 160px;
   bottom: -15px;
-  
+  text-align: center;  
 }
 
- 
-/**	
-* Nonatomic Branding
-*/
-#link {
-  font-family: 'Roboto', sans-serif;
-  position: fixed;
-  bottom: 15px;
-  width: 250px;
-  left: 0;
-  text-align: center;
-  z-index: 9999;
-}
 
 .img-url {
   text-decoration: none;
@@ -289,7 +271,7 @@ a:link {
 }
 
 a:visited {
-  color: white;
+  color: #FD0E35;     /* This is Back to Top Color */
 }
 
 a:hover {
