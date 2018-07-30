@@ -67,6 +67,8 @@ particlesJS("particles-js", {
     },
     "retina_detect": true
 });
+
+
 var count_particles, stats, update;
 stats = new Stats;
 stats.setMode(0);
@@ -83,3 +85,10 @@ update = function() {
 requestAnimationFrame(update);;
 
 
+/*$(function() {
+    $('a[href*=#]').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate
+        ({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
+    });
+});*/

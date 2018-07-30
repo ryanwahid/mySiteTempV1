@@ -1,7 +1,7 @@
 /**
 * Switch out the php url for your own. Very simplified example PHP found at the bottom of this script
 */
-var phpURL = "YOUR PHP URL GOES HERE";
+var phpURL = "server.php";
 
 $(".contact-icon").on("click", toggleContactForm);
 $(".cross").on("click", closeForm);
