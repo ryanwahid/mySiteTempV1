@@ -21,17 +21,18 @@
   padding: 0;
   height: 100%
       overflow-x: hidden; 
-} */
+} */ 
 
 .container {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #080a30;
-  background-image: url('nasa2.gif');
+  background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+  background-image: none;
   background-repeat: no-repeat;"
   overflow: hidden;
   background-size: contain;
+
 }
 
 .contact-form {
@@ -63,7 +64,7 @@ form {
   bottom: 100px;
 }
 
-.cross {
+/* .cross {
   position: absolute;
   display: inline-block;
   z-index: 99999;
@@ -74,7 +75,7 @@ form {
   cursor: pointer;
   transition: all 0.5s;
 }
-
+ */
 .cross:hover {
   transform: rotate(90deg);
 }
@@ -241,11 +242,10 @@ footer {
   z-index: 9999;
   width: .1px;
   height: .1px;
-  background-color: red;
-
-
+  background-color: none;
 
 }
+
 
 /* This is the big mail icon/button */
 .contact-icon {
@@ -253,21 +253,10 @@ footer {
   position: center;
   width: 160px;
   bottom: -15px;
-  
+  text-align: center;  
 }
 
-/* * 
-* Nonatomic Branding
-#link {
-  font-family: 'Roboto', sans-serif;
-  position: fixed;
-  bottom: 15px;
-  width: 250px;
-  left: 0;
-  text-align: center;
-  z-index: 9999;
-}
- */
+
 .img-url {
   text-decoration: none;
 }
@@ -282,7 +271,7 @@ a:link {
 }
 
 a:visited {
-  color: white;
+  color: #FD0E35;     /* This is Back to Top Color */
 }
 
 a:hover {

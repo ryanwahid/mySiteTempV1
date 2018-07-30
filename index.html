@@ -3,23 +3,23 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0,maximum-scale=1.0">
-
-  <title>Welcome</title>
+  <title>My Page</title>
   
   
   
       <link rel="stylesheet" href="css/style.css">
 
-   
+  
 </head>
 
 <body>
-			<!-- Start of Page One -->
-<section id="section01" class="demo">
-<h1> 
-	<p>Hi, I'm Ryan. With my Devops skills</p> 
-	<p>I make Faster Innovation possible.</p>
+      <!-- Section 3 is page 1 -->
+      <!-- Start of Page 1 -->
+
+<section id="section03" class="demo">
+  <h1> 
+  <p>Hi, I'm Ryan. With my Devops skills</p> 
+  <p>I make Faster Innovation possible.</p>
 
 </h1>
 
@@ -29,65 +29,79 @@
 </script> <!-- stats.js lib -->
 <script  src="js/index.js"></script>
 <!-- Page JavaScript -->
-			<!-- End of Page One -->
+  <a href="#section05"><span></span>About Ryan</a> 
+</section>
+    <!-- End of Page 1 -->
 
-			<!-- Start of Page Two -->
-<a href="#section02"><span></span>About Ryan</a>
+<!--  
+<section id="section04" class="demo">
+ <h1>Scroll Down Button #4</h1>
+ <a href="#section05"><span></span>Scroll</a>
+
 </section>
 
-<section id="section02" class="demo">
-<h1>Scroll Down Button #2</h1>
-<a href="#section03"><span></span>Say Hello</a>
+-->
+      <!-- Start of Page 2 -->
+
+<section id="section05" class="demo">
+  <h1>Scroll Down Button #5</h1>
+  <a href="#section06"><span></span>Say Hello</a>
 </section>
-			<!-- End of Page Two -->
 
-			<!-- Start of Page Three -->
+    <!-- End of Page 2 -->
 
-<section id="section03" class="demo">
+      <!-- Start of Page 3 -->
 
+<section id="section06" class="demo">
+ 
 <!-- Start of Contact Page -->
-	<link rel="stylesheet" href="css/contact.css"> <!-- Linking CSS Here -->
-	<h3>Please send your message below. I will get back to you at the earliest!</h3>
+  <link rel="stylesheet" href="css/contact.css"> 
+  <link rel="stylesheet" href="css/style.css"><!-- Linking CSS Here -->
   <div class="container">
-	<div class="contact-form">
-		<div class="horline"></div>
-		<div class="vertline"></div>
-		<div class="form-background"></div>
-		
+  <div class="contact-form">
+    <div class="horline"></div>
+    <div class="vertline"></div>
+    <div class="form-background"></div>
+    
 
-		<form id="contact" method="POST" accept-charset="UTF-8">
-			
-			<div class="name text-input">
-				<label>Name</label>
-				<div class="error-mark">*</div>
-				<input type="text" maxlength="50" name="name"></input>
-			</div>
-			<div class="email text-input">
-				<label>Email</label>
-				<div class="error-mark">*</div>
-				<input type="email" maxlength="50" name="email"></input>
-				<img class="cross" src="http://www.testomic.com/public/codepen-assets/img/cross.svg"></img>
-			</div>
-			<div class="message text-input">
-				<label>Message</label>
-				<div class="error-mark">*</div>
-				<textarea type="text" name="msg"></textarea>
-<a href="#section01"><span></span>Back To Top</a> <!-- This is Back to Top -->
-			</div>
+    <form id="contact" method="POST" accept-charset="UTF-8">
+      
+      <div class="name text-input">
+        <label>Name</label>
+        <div class="error-mark">*</div>
+        <input type="text" maxlength="50" name="name"></input>
+      </div>
+      <div class="email text-input">
+        <label>Email</label>
+        <div class="error-mark">*</div>
+        <input type="email" maxlength="50" name="email"></input>
+        <!-- <img class="cross" src="http://www.testomic.com/public/codepen-assets/img/cross.svg"></img> -->
+      </div>
+      <div class="message text-input">
+        <label>Message</label>
+        <div class="error-mark">*</div>
+        <textarea type="text" name="msg"></textarea>
 
-			<input type="submit" class="submit" value="">
-				<div class="result">
+      </div>
 
-					<div class="result-message">Sent</div>
-					<img class="submit-icon" src="http://www.testomic.com/public/codepen-assets/img/icon_letter_mail.svg"></img>
-				</div>
-			</input>
-		</form>
-	</div>
+      <input type="submit" class="submit" value="">
+        <div class="result">
+
+          <div class="result-message">Sent</div>
+          <img class="submit-icon" src="http://www.testomic.com/public/codepen-assets/img/icon_letter_mail.svg"></img>
+        </div>
+      </input>
+    </form>
+  </div>
 </div>
 
 <footer>
-	<img class="contact-icon" src="http://www.testomic.com/public/codepen-assets/img/icon_letter_mail.svg"></img>
+  <h1><a href="#section03"><span>Back to Top</span></a></h1>
+  <ul class="contact-icon" >
+<img src="http://www.testomic.com/public/codepen-assets/img/icon_letter_mail.svg"</img><p>leave a message!</p>
+</ul>
+
+  
 </footer>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
@@ -95,13 +109,36 @@
 <!-- End of Contact Page -->
 
 </section>
-			<!-- End of Page Three -->
 
-<!-- makes smooth scroll posible -->
+        <!-- End of Page 3 -->
+
+<!-- 
+  <section id="section07" class="demo">
+    <h1>Scroll Down Button #7</h1>
+    <a href="#section08"><span></span><span></span><span></span>Scroll</a> Link to Next Page
+  </section>
+  
+  <section id="section09" class="demo">
+    <h1>Scroll Down Button #9</h1>
+    <a href="#section10"><span></span>Scroll</a>
+  </section>
+  <section id="section10" class="demo">
+    <h1>Scroll Down Button #10</h1>
+    <a href="#thanks"><span></span>Scroll</a>
+  </section>
+  <section id="thanks">
+    <div>
+      <h2>Thanks!</h2>
+      <p><a href="https://www.nxworld.net/tips/css-scroll-down-button.html" target="_parent">&lt; Back To Article</a></p>
+    </div>
+  </section>
+   -->  
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script  src="js/index.js"></script>
+
+
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script  src="js/scroll.js"></script> 
-<!-- makes smooth scroll posible -->
-
 
 </body>
 
