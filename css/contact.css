@@ -272,6 +272,7 @@ a:link {
 
 a:visited {
   color: #FD0E35;     /* This is Back to Top Color */
+
 }
 
 a:hover {
@@ -286,4 +287,31 @@ a:active {
   width: 30px;
   transform: translate(-10px, 12px);
   opacity: 1;
+}
+
+i {
+    border: solid black;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
