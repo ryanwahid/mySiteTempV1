@@ -40,8 +40,8 @@ section h1 {        /* changes header font & color */
 #section02 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg02.jpg) center center / cover no-repeat;} */
 #section03 { background: url(img1.svg) center center / cover no-repeat;}
 /* #section04 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg04.jpg) center center / cover no-repeat;} */
-#section05 { background: linear-gradient(120deg, #A0E6FF 60%, #FFFF00 60%) center center / cover no-repeat;}
-#section06 { background: linear-gradient(-790deg, #FFFF31 73%, rgba(0, 0, 0, 0) 30%), url(code.jpg) center center / cover no-repeat;}
+/* #section05 { background: linear-gradient(120deg, #A0E6FF 60%, #FFFF00 60%) center center / cover no-repeat;} */
+#section06 { background: linear-gradient(-790deg, #c2dde6 73%, rgba(0, 0, 0, 0) 30%), url(code.jpg) center center / cover no-repeat;}
 /* #section07 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg07.jpg) center center / cover no-repeat;}
 #section08 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg08.jpg) center center / cover no-repeat;}
 #section09 { background: url(https://www.nxworld.net/example/css-scroll-down-button/bg09.jpg) center center / cover no-repeat;}
@@ -99,59 +99,7 @@ section h1 {        /* changes header font & color */
 .demo a:hover {
   opacity: .5;
 }
-/* 
 
-
-#section01 a {
-  padding-top: 60px;
-}
-#section01 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  box-sizing: border-box;
-}
-
-
-
-#section02 a {
-  padding-top: 60px;
-}
-#section02 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 46px;
-  height: 46px;
-  margin-left: -23px;
-  border: 1px solid #fff;
-  border-radius: 100%;
-  box-sizing: border-box;
-}
-#section02 a span::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  content: '';
-  width: 16px;
-  height: 16px;
-  margin: -12px 0 0 -8px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  box-sizing: border-box;
-}
-
-
- */
 #section03 a {
   padding-top: 60px;
 }
@@ -226,50 +174,7 @@ section h1 {        /* changes header font & color */
   }
 }
 
-/* 
 
-#section04 a {
-  padding-top: 60px;
-}
-#section04 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: sdb04 2s infinite;
-  animation: sdb04 2s infinite;
-  box-sizing: border-box;
-}
-@-webkit-keyframes sdb04 {
-  0% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-  }
-  20% {
-    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
-  }
-  40% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-  }
-}
-@keyframes sdb04 {
-  0% {
-    transform: rotate(-45deg) translate(0, 0);
-  }
-  20% {
-    transform: rotate(-45deg) translate(-10px, 10px);
-  }
-  40% {
-    transform: rotate(-45deg) translate(0, 0);
-  }
-}
-
- */
 
 #section05 a {
   padding-top: 70px;
@@ -364,195 +269,102 @@ border-bottom: 1px solid #000; */
   }
 }
 
-/* 
 
-#section07 a {
-  padding-top: 80px;
-}
-#section07 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: sdb07 2s infinite;
-  animation: sdb07 2s infinite;
-  opacity: 0;
-  box-sizing: border-box;
-}
-#section07 a span:nth-of-type(1) {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-}
-#section07 a span:nth-of-type(2) {
-  top: 16px;
-  -webkit-animation-delay: .15s;
-  animation-delay: .15s;
-}
-#section07 a span:nth-of-type(3) {
-  top: 32px;
-  -webkit-animation-delay: .3s;
-  animation-delay: .3s;
-}
-@-webkit-keyframes sdb07 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb07 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(230deg, #F79F79  50%,  #AAF0D1 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
 }
 
-
-
-#section08 a {
-  padding-top: 60px;
-}
-#section08 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 30px;
-  height: 50px;
-  margin-left: -15px;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  box-sizing: border-box;
-}
-#section08 a span::before {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  content: '';
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: #fff;
-  border-radius: 100%;
-  box-sizing: border-box;
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
 }
 
-
-
-#section09 a {
-  padding-top: 80px;
-}
-#section09 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 30px;
-  height: 50px;
-  margin-left: -15px;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  box-sizing: border-box;
-}
-#section09 a span::before {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  content: '';
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: #fff;
-  border-radius: 100%;
-  box-sizing: border-box;
-}
-#section09 a span::after {
-  position: absolute;
-  bottom: -18px;
-  left: 50%;
-  width: 18px;
-  height: 18px;
-  content: '';
-  margin-left: -9px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  box-sizing: border-box;
-}
-
-
-
-#section10 a {
-  padding-top: 60px;
-}
-#section10 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 30px;
-  height: 50px;
-  margin-left: -15px;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  box-sizing: border-box;
-}
-#section10 a span::before {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  content: '';
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: #fff;
-  border-radius: 100%;
-  -webkit-animation: sdb10 2s infinite;
-  animation: sdb10 2s infinite;
-  box-sizing: border-box;
-}
-@-webkit-keyframes sdb10 {
-  0% {
-    -webkit-transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb10 {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+/* .bg3 {
+  animation-duration:5s;
 } */
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  z-index: 9999;
+  padding:4vmin;
+  position:absolute;
+  text-align:justify;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+
+
+h2 {
+  font-family:monospace;
+  position: absolute;
+  text-align:justify;
+  left:30%;
+  top: 20%;
+  font : normal 300 4em/1 'Josefin Sans', sans-serif;
+  text-align: center;
+  white-space: wrap;
+  font-weight: bold;
+  text-shadow: 2px 2px #000;
+  color: snow;
+
+}
+
+p .github {
+ 
+
+  z-index: 9999;
+  
+
+  color: black;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+
+/* chnaging text content*/
+
+#spin {
+  color:#FFFF38;
+}
+#spin:after {
+  content:"";
+  animation: spin 5s linear infinite;
+  transform:translate(-50%, -50%);
+  left:50%;
+}
+@keyframes spin {
+  0% { content:"DevOps"; }
+  10% { content:"CSS"; }
+  20% { content:"HTML"; }
+  30% { content:"JavaScript"; }
+  40% { content:"Ruby on Rails"; }
+  50% { content: "Sotware Testing"; }
+  60% { content: "Linux"; }
+  70% { content: "Docker"; }
+  80% { content: "AWS"; }
+  90% { content: "Vagrant"; }
+}
