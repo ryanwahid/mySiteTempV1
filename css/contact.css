@@ -16,12 +16,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/* body {
-  margin: 0;
-  padding: 0;
-  height: 100%
-      overflow-x: hidden; 
-} */ 
+
 
 .container {
   position: absolute;
@@ -64,18 +59,7 @@ form {
   bottom: 100px;
 }
 
-/* .cross {
-  position: absolute;
-  display: inline-block;
-  z-index: 99999;
-  width: 15px;
-  height: 15px;
-  left: calc(88% - 15px);
-  bottom: calc(210px + 6% - 25px);
-  cursor: pointer;
-  transition: all 0.5s;
-}
- */
+
 .cross:hover {
   transform: rotate(90deg);
 }
@@ -211,29 +195,7 @@ textarea:focus {
   overflow: hidden;
 }
 
-/* .horline {
-  position: absolute;
-  z-index: 9999;
-  background-color: #4285F4;
-  bottom: 125px;
-  left: calc(56% + 25px);
-  height: 1px;
-  width: 13%;
-}
 
-.vertline {
-  position: absolute;
-  z-index: 9999;
-  background-color: #c54d74;
-  bottom: calc(126px - 125px);
-  left: calc(56% + 250px);
-  height: 125px;
-  width: 1px;
-}
- */
-/**
-* Footer
-*/
 footer {
   position: relative;
   display: block;
